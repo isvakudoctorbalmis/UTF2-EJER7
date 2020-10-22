@@ -1,0 +1,74 @@
+﻿<Window
+    x:Class="UTF2_EJER7.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:UTF2_EJER7"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Tamaño del texto adaptable"
+    Width="800"
+    Height="450"
+    Icon="read_book_study_icon-icons.com_51077.ico"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            Name="textoTextBlock"
+            Width="819"
+            Height="179"
+            Margin="-10,0,-17,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="72"
+            FontWeight="Bold"
+            Foreground="#FF3DAFE4"
+            Text="Desarrollo de interfaces"
+            TextWrapping="Wrap">
+            <TextBlock.Effect>
+                <DropShadowEffect />
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <RadioButton
+            Name="pequeñoRadioButton"
+            Width="297"
+            MinWidth="4"
+            Margin="86,213,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="#FF232323"
+            BorderThickness="35"
+            Checked="pequeñoRadioButton_Checked"
+            Content="Pequeño"
+            FontSize="36"
+            GroupName="tamañoRadioButtons"
+            Tag="32" />
+        <RadioButton
+            x:Name="medianoRadioButton"
+            Width="297"
+            MinWidth="4"
+            Margin="448,213,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="#FF232323"
+            BorderThickness="35"
+            Checked="pequeñoRadioButton_Checked"
+            Content="mediano"
+            FontSize="36"
+            GroupName="tamañoRadioButtons"
+            Tag="48" />
+        <RadioButton
+            x:Name="grandeRadioButton"
+            Width="297"
+            MinWidth="4"
+            Margin="253,327,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="#FF232323"
+            BorderThickness="35"
+            Checked="pequeñoRadioButton_Checked"
+            Content="grande"
+            FontSize="36"
+            GroupName="tamañoRadioButtons"
+            Tag="72" />
+    </Grid>
+</Window>
